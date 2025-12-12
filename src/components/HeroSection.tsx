@@ -43,13 +43,16 @@ export const HeroSection = () => {
           delay: 0.5
         }}>
             <div className="gradient-orange-box rounded-3xl p-6 md:p-8 animate-pulse-glow">
-              <motion.button whileHover={{
-              scale: 1.05
-            }} whileTap={{
-              scale: 0.95
-            }} className="bg-background/90 hover:bg-background text-foreground font-display text-base md:text-lg tracking-wider px-6 py-3 rounded-full transition-colors duration-300 shadow-lg">
+              <motion.a
+                href="https://cardswingmen.space/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-background/90 hover:bg-background text-foreground font-display text-base md:text-lg tracking-wider px-6 py-3 rounded-full transition-colors duration-300 shadow-lg inline-block"
+              >
                 3000 NFT PRESALE
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
@@ -104,13 +107,16 @@ export const HeroSection = () => {
           }}>
               <div className="gradient-orange-box rounded-3xl p-8 xl:p-12 animate-pulse-glow">
                 <div className="text-center">
-                  <motion.button whileHover={{
-                  scale: 1.05
-                }} whileTap={{
-                  scale: 0.95
-                }} className="bg-background/90 hover:bg-background text-foreground font-display text-lg xl:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg">
+                  <motion.a
+                    href="https://cardswingmen.space/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-background/90 hover:bg-background text-foreground font-display text-lg xl:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg inline-block"
+                  >
                     3000 NFT PRESALE
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
