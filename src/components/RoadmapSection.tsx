@@ -5,27 +5,45 @@ import { Check, Circle } from "lucide-react";
 
 const roadmapItems = [
   {
-    phase: "Phase 1",
-    title: "Foundation",
-    description: "Community building, social media launch, and initial concept development.",
+    phase: "Stage 1",
+    title: "Fundraising",
+    description: "Crypto fundraising for film production.",
     completed: true,
   },
   {
-    phase: "Phase 2",
-    title: "NFT Launch",
-    description: "Release of 3,000 unique NFTs with exclusive holder benefits.",
+    phase: "Stage 2",
+    title: "Token & NFT",
+    description: "Launch of the token and NFT collection.",
     completed: true,
   },
   {
-    phase: "Phase 3",
+    phase: "Stage 3",
     title: "Production",
-    description: "Full film production begins with locations across the globe.",
+    description: "Film production and content creation.",
     completed: false,
   },
   {
-    phase: "Phase 4",
-    title: "Premiere",
-    description: "Global premiere with exclusive NFT holder events and screenings.",
+    phase: "Stage 4",
+    title: "Seasons",
+    description: "Release of future seasons.",
+    completed: false,
+  },
+  {
+    phase: "Stage 5",
+    title: "Festivals",
+    description: "Presentation at international festivals.",
+    completed: false,
+  },
+  {
+    phase: "Stage 6",
+    title: "Streaming",
+    description: "Release on major streaming platforms.",
+    completed: false,
+  },
+  {
+    phase: "Stage 7",
+    title: "Expansion",
+    description: "Expansion of the Web3 film distribution model.",
     completed: false,
   },
 ];
