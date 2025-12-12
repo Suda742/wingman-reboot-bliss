@@ -67,7 +67,7 @@ export const HeroSection = () => {
             duration: 0.8,
             delay: 0.2
           }}>
-              <img src={wingmenLogo} alt="WINGMEN" className="h-[240px] lg:h-[300px] xl:h-[360px] 2xl:h-[420px] w-auto mb-12" />
+              <img src={wingmenLogo} alt="WINGMEN" className="h-[160px] lg:h-[200px] xl:h-[240px] 2xl:h-[280px] w-auto mb-8" />
               <p className="text-xl text-muted-foreground max-w-md">
                 THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
               </p>
