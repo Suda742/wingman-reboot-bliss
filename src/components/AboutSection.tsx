@@ -47,12 +47,10 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              WINGMEN is a groundbreaking film that dives deep into the world of cryptocurrency enthusiasts. 
-              Follow the journey of individuals who believed in a financial revolution when the world doubted them.
+              WINGMEN is a film about four friends who grew up together and later entered the crypto world side by side. What started as childhood friendship turns into a shared risk, ambition, and belief in something bigger than themselves.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From the early days of Bitcoin to the rise of NFTs, this film captures the passion, 
-              the risks, and the triumphs of the crypto community.
+              From early mistakes to bold moves, the film follows how they disconnect from ordinary paths and commit fully to crypto. As the market rises and falls, their friendship, trust, and values are tested while they chase freedom, meaning, and a future they chose together.
             </p>
             <div className="pt-4">
               <motion.button
