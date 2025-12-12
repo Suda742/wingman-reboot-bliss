@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Play } from "lucide-react";
 
 export const AboutSection = () => {
   const ref = useRef(null);
@@ -23,23 +22,20 @@ export const AboutSection = () => {
         </motion.h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Video placeholder */}
+          {/* YouTube Video Embed */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="relative aspect-video bg-card rounded-2xl overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 text-foreground">
-                <p className="font-display text-lg">Wingmen Trailer</p>
-                <p className="text-sm text-muted-foreground">Watch on YouTube</p>
-              </div>
+            <div className="relative aspect-video bg-card rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/LZw2DAgtnGE"
+                title="Wingmen Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full rounded-2xl"
+              />
             </div>
           </motion.div>
 
