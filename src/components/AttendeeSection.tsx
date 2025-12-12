@@ -7,22 +7,22 @@ const benefits = [
   {
     icon: Ticket,
     title: "Exclusive Access",
-    description: "Priority access to film premieres and special screenings.",
+    description: "Priority access to premieres and screenings.",
   },
   {
     icon: Users,
     title: "Community Events",
-    description: "Join exclusive meetups with cast, crew, and fellow crypto enthusiasts.",
+    description: "Meetups with cast, crew, and enthusiasts.",
   },
   {
     icon: Star,
     title: "Behind the Scenes",
-    description: "Get exclusive behind-the-scenes content and updates.",
+    description: "Exclusive content and production updates.",
   },
   {
     icon: Trophy,
     title: "Special Rewards",
-    description: "Earn unique rewards and merchandise as an early supporter.",
+    description: "Unique rewards and merchandise.",
   },
 ];
 
@@ -51,7 +51,7 @@ export const AttendeeSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center text-muted-foreground text-lg max-w-2xl mx-auto mb-16"
         >
-          Become an official WINGMEN attendee and unlock exclusive benefits as part of our community.
+          Become an official WINGMEN attendee and unlock exclusive community benefits.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -62,10 +62,10 @@ export const AttendeeSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * index }}
               whileHover={{ y: -10 }}
-              className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+              className="bg-card/70 backdrop-blur-sm p-6 rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="w-14 h-14 gradient-orange-box rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <benefit.icon className="w-7 h-7 text-primary-foreground" />
+                <benefit.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="font-display text-xl font-bold text-foreground mb-2">
                 {benefit.title}
@@ -88,7 +88,7 @@ export const AttendeeSection = () => {
             whileTap={{ scale: 0.95 }}
             className="gradient-orange-box text-primary-foreground font-display text-lg tracking-wider px-10 py-5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
           >
-            BECOME AN ATTENDEE
+            BECOME A WINGMEN ATTENDEE
           </motion.button>
         </motion.div>
       </div>
