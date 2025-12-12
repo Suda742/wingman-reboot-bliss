@@ -78,7 +78,7 @@ export const HeroSection = () => {
               <img 
                 src={wingmenLogo} 
                 alt="WINGMEN" 
-                className="h-[110px] lg:h-[130px] xl:h-[150px] 2xl:h-[160px] w-auto mb-6"
+                className="h-[130px] lg:h-[150px] xl:h-[170px] 2xl:h-[190px] w-auto mb-6"
               />
               <p className="text-xl text-muted-foreground max-w-md">
                 THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
