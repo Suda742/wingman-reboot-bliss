@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import wingmenLogo from "@/assets/wingmen-logo.png";
 
 const navLinks = [
   { href: "#about", label: "ABOUT" },
@@ -32,10 +33,16 @@ export const Navbar = () => {
           </div>
 
           {/* Logo */}
-          <a href="#" className="flex-shrink-0">
-            <h1 className="font-display text-2xl md:text-3xl font-bold tracking-wider text-chrome">
-              WING<br className="hidden md:block" />MEN
-            </h1>
+          <a 
+            href="#" 
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            className="flex-shrink-0 cursor-pointer"
+          >
+            <img 
+              src={wingmenLogo} 
+              alt="WINGMEN" 
+              className="h-9 md:h-12 lg:h-14 xl:h-16 w-auto"
+            />
           </a>
 
           {/* Right nav links */}
