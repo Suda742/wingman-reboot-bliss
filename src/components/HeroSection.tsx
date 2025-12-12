@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import centerCharacter from "@/assets/center-character.png";
+import wingmenLogo from "@/assets/wingmen-logo.png";
+
 export const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
@@ -13,9 +15,11 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center gap-8 lg:hidden">
           {/* Title */}
           <div className="text-center">
-            <h1 className="font-display text-6xl md:text-8xl font-bold tracking-wider text-chrome-large leading-none mb-4">
-              WINGMEN
-            </h1>
+            <img 
+              src={wingmenLogo} 
+              alt="WINGMEN" 
+              className="h-[70px] md:h-[100px] w-auto mx-auto mb-4"
+            />
             <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto">
               THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
             </p>
@@ -71,9 +75,11 @@ export const HeroSection = () => {
             duration: 0.8,
             delay: 0.2
           }}>
-              <h1 className="font-display text-8xl font-bold tracking-wider text-chrome-large leading-none mb-6 xl:text-8xl text-left">
-                WINGMEN
-              </h1>
+              <img 
+                src={wingmenLogo} 
+                alt="WINGMEN" 
+                className="h-[110px] lg:h-[130px] xl:h-[150px] 2xl:h-[160px] w-auto mb-6"
+              />
               <p className="text-xl text-muted-foreground max-w-md">
                 THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
               </p>
