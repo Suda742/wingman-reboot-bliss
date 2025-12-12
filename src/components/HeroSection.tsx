@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import centerCharacter from "@/assets/center-character.png";
 import wingmenLogo from "@/assets/wingmen-logo.png";
-
 export const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
@@ -15,11 +14,7 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center gap-8 lg:hidden">
           {/* Title */}
           <div className="text-center">
-            <img 
-              src={wingmenLogo} 
-              alt="WINGMEN" 
-              className="h-[70px] md:h-[100px] w-auto mx-auto mb-4"
-            />
+            <img src={wingmenLogo} alt="WINGMEN" className="h-[70px] md:h-[100px] w-auto mx-auto mb-4" />
             <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto">
               THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
             </p>
@@ -47,14 +42,11 @@ export const HeroSection = () => {
           delay: 0.5
         }}>
             <div className="gradient-orange-box rounded-3xl p-6 md:p-8 animate-pulse-glow">
-              <motion.a
-                href="https://cardswingmen.space/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-background/90 hover:bg-background text-foreground font-display text-base md:text-lg tracking-wider px-6 py-3 rounded-full transition-colors duration-300 shadow-lg inline-block"
-              >
+              <motion.a href="https://cardswingmen.space/" target="_blank" rel="noopener noreferrer" whileHover={{
+              scale: 1.05
+            }} whileTap={{
+              scale: 0.95
+            }} className="bg-background/90 hover:bg-background text-foreground font-display text-base md:text-lg tracking-wider px-6 py-3 rounded-full transition-colors duration-300 shadow-lg inline-block">
                 3000 NFT PRESALE
               </motion.a>
             </div>
@@ -75,11 +67,7 @@ export const HeroSection = () => {
             duration: 0.8,
             delay: 0.2
           }}>
-              <img 
-                src={wingmenLogo} 
-                alt="WINGMEN" 
-                className="h-[130px] lg:h-[150px] xl:h-[170px] 2xl:h-[190px] w-auto mb-6"
-              />
+              <img src={wingmenLogo} alt="WINGMEN" className="h-[200px] lg:h-[250px] xl:h-[300px] 2xl:h-[340px] w-auto mb-10" />
               <p className="text-xl text-muted-foreground max-w-md">
                 THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
               </p>
@@ -113,14 +101,11 @@ export const HeroSection = () => {
           }}>
               <div className="gradient-orange-box rounded-3xl p-8 xl:p-12 animate-pulse-glow">
                 <div className="text-center">
-                  <motion.a
-                    href="https://cardswingmen.space/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-background/90 hover:bg-background text-foreground font-display text-lg xl:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg inline-block"
-                  >
+                  <motion.a href="https://cardswingmen.space/" target="_blank" rel="noopener noreferrer" whileHover={{
+                  scale: 1.05
+                }} whileTap={{
+                  scale: 0.95
+                }} className="bg-background/90 hover:bg-background text-foreground font-display text-lg xl:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg inline-block">
                     3000 NFT PRESALE
                   </motion.a>
                 </div>
