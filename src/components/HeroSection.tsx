@@ -68,7 +68,7 @@ export const HeroSection = () => {
             duration: 0.8,
             delay: 0.2
           }}>
-              <h1 className="font-display text-8xl font-bold tracking-wider text-chrome-large leading-none mb-6 xl:text-8xl text-center">
+              <h1 className="font-display text-8xl font-bold tracking-wider text-chrome-large leading-none mb-6 xl:text-8xl text-left">
                 WINGMEN
               </h1>
               <p className="text-xl text-muted-foreground max-w-md">
