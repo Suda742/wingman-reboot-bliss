@@ -6,23 +6,23 @@ import { Users, Ticket, Star, Trophy } from "lucide-react";
 const benefits = [
   {
     icon: Ticket,
-    title: "Exclusive Access",
-    description: "Priority access to premieres and screenings.",
+    title: "Product Placement",
+    description: "Brand integration opportunities in the film.",
   },
   {
     icon: Users,
-    title: "Community Events",
-    description: "Meetups with cast, crew, and enthusiasts.",
+    title: "Community Access",
+    description: "NFT holder community and creative input.",
   },
   {
     icon: Star,
-    title: "Behind the Scenes",
-    description: "Exclusive content and production updates.",
+    title: "Premium Events",
+    description: "Private events and festival participation.",
   },
   {
     icon: Trophy,
-    title: "Special Rewards",
-    description: "Unique rewards and merchandise.",
+    title: "Long-term Role",
+    description: "Ongoing participation in WINGMEN project.",
   },
 ];
 
@@ -51,7 +51,7 @@ export const AttendeeSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center text-muted-foreground text-lg max-w-2xl mx-auto mb-16"
         >
-          Become an official WINGMEN attendee and unlock exclusive community benefits.
+          Join as an investor or holder. Unlock collaboration, events, and long-term participation.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

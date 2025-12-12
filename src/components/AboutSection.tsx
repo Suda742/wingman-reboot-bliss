@@ -47,10 +47,10 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              WINGMEN is a film about four friends who grew up together and later entered the crypto world side by side. What started as childhood friendship turns into a shared risk, ambition, and belief in something bigger than themselves.
+              WINGMEN is a multi-part crime drama set in the crypto world. The story follows characters whose lives, risks, and choices unfold inside the Web3 ecosystem. The project combines cinema, crypto funding, NFTs, and digital distribution into one system.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From early mistakes to bold moves, the film follows how they disconnect from ordinary paths and commit fully to crypto. As the market rises and falls, their friendship, trust, and values are tested while they chase freedom, meaning, and a future they chose together.
+              The first episode and trailer are complete. Season one will include six episodes. Funding continues using crypto assets only. The film will be released through international platforms and submitted to major festivals worldwide.
             </p>
             <div className="pt-4">
               <motion.button
