@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroCharacter from "@/assets/hero-character.png";
+import centerCharacter from "@/assets/center-character.png";
 
 export const HeroSection = () => {
   return (
@@ -7,79 +7,104 @@ export const HeroSection = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary" />
       
-      {/* Orange glow */}
-      <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
-
-      {/* Centered Badge */}
-      <motion.div 
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 cursor-pointer"
-        whileHover={{ scale: 1.03 }}
-        transition={{ duration: 0.2 }}
-      >
-        <div 
-          className="w-[280px] md:w-[320px] h-[90px] md:h-[110px] rounded-2xl bg-primary flex items-center justify-center"
-          style={{ boxShadow: '0 0 40px hsl(var(--primary) / 0.4)' }}
-        >
-          <div className="bg-background/90 rounded-full px-6 py-2.5 h-[40px] flex items-center justify-center">
-            <span className="text-foreground font-display text-sm md:text-base font-bold tracking-wider">
-              3000 NFT PRESALE
-            </span>
-          </div>
-        </div>
-      </motion.div>
+      {/* Orange glow behind character */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] bg-primary/20 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left content */}
-          <div className="text-center lg:text-left">
+        {/* Mobile/Tablet: Stacked layout */}
+        <div className="flex flex-col items-center gap-8 lg:hidden">
+          {/* Title */}
+          <div className="text-center">
+            <h1 className="font-display text-6xl md:text-8xl font-bold tracking-wider text-chrome-large leading-none mb-4">
+              WINGMEN
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto">
+              THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
+            </p>
+          </div>
+
+          {/* Center Character */}
+          <motion.div 
+            className="relative"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="absolute inset-0 bg-primary/15 rounded-full blur-[80px] scale-75 transition-all duration-300 group-hover:bg-primary/25" />
+            <img 
+              src={centerCharacter} 
+              alt="Wingmen character" 
+              className="relative z-10 h-[240px] md:h-[320px] w-auto object-contain"
+            />
+          </motion.div>
+
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            <div className="gradient-orange-box rounded-3xl p-6 md:p-8 animate-pulse-glow">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-background/90 hover:bg-background text-foreground font-display text-base md:text-lg tracking-wider px-6 py-3 rounded-full transition-colors duration-300 shadow-lg"
+              >
+                3000 NFT PRESALE
+              </motion.button>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Desktop: 3-column layout */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-8 items-center min-h-[600px]">
+          {/* Left content - Title */}
+          <div className="text-left">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-wider text-chrome-large leading-none mb-6">
+              <h1 className="font-display text-8xl xl:text-9xl font-bold tracking-wider text-chrome-large leading-none mb-6">
                 WINGMEN
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto lg:mx-0">
+              <p className="text-xl text-muted-foreground max-w-md">
                 THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
               </p>
             </motion.div>
+          </div>
 
-            {/* Character image on mobile */}
-            <motion.div
-              className="lg:hidden mt-8"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+          {/* Center - Character Image */}
+          <div className="flex items-center justify-center">
+            <motion.div 
+              className="relative group"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             >
-              <img src={heroCharacter} alt="Wingmen character" className="w-full max-w-sm mx-auto" />
+              {/* Glow effect */}
+              <div 
+                className="absolute inset-0 bg-primary/20 rounded-full blur-[100px] scale-90 transition-all duration-300 group-hover:bg-primary/30 group-hover:blur-[120px]" 
+              />
+              <img 
+                src={centerCharacter} 
+                alt="Wingmen character" 
+                className="relative z-10 h-[420px] xl:h-[520px] w-auto object-contain"
+              />
             </motion.div>
           </div>
 
           {/* Right content - NFT Card */}
-          <div className="flex flex-col items-center lg:items-end gap-8">
-            {/* Character image on desktop */}
-            <motion.div
-              className="hidden lg:block absolute left-1/3 -translate-x-1/2 bottom-0"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-            </motion.div>
-
-            {/* NFT Presale Card */}
+          <div className="flex items-center justify-end">
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="relative"
             >
-              <div className="gradient-orange-box rounded-3xl p-8 md:p-12 w-full max-w-sm animate-pulse-glow">
+              <div className="gradient-orange-box rounded-3xl p-8 xl:p-12 animate-pulse-glow">
                 <div className="text-center">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-background/90 hover:bg-background text-foreground font-display text-lg md:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg"
+                    className="bg-background/90 hover:bg-background text-foreground font-display text-lg xl:text-xl tracking-wider px-8 py-4 rounded-full transition-colors duration-300 shadow-lg"
                   >
                     3000 NFT PRESALE
                   </motion.button>
