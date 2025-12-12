@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import nftCollection from "@/assets/nft-collection.png";
-import heroCharacter from "@/assets/hero-character.png";
+import gallery1 from "@/assets/gallery-1.gif";
+import gallery2 from "@/assets/gallery-2.gif";
+import gallery3 from "@/assets/gallery-3.gif";
+import gallery4 from "@/assets/gallery-4.gif";
 
 const galleryImages = [
-  { src: heroCharacter, alt: "Wingmen Character 1" },
-  { src: nftCollection, alt: "NFT Collection" },
-  { src: heroCharacter, alt: "Wingmen Character 2" },
-  { src: nftCollection, alt: "NFT Characters" },
+  { src: gallery1, alt: "Wingmen Character 1" },
+  { src: gallery2, alt: "Wingmen Character 2" },
+  { src: gallery3, alt: "Wingmen Character 3" },
+  { src: gallery4, alt: "Wingmen Character 4" },
 ];
 
 export const GallerySection = () => {
@@ -30,27 +32,20 @@ export const GallerySection = () => {
           GALLERY
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 gap-4 max-w-[760px] mx-auto">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * index }}
-              whileHover={{ scale: 1.05, zIndex: 10 }}
-              className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group"
+              className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] md:w-[320px] md:h-[320px] xl:w-[360px] xl:h-[360px] overflow-hidden rounded-2xl border-2 border-primary shadow-[0_0_20px_rgba(255,107,0,0.3)]"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-foreground font-display text-sm tracking-wider">
-                  {image.alt}
-                </p>
-              </div>
             </motion.div>
           ))}
         </div>
