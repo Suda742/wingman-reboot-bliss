@@ -86,7 +86,7 @@ export const HeroSection = () => {
           }}>
               {/* Glow effect */}
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-[100px] scale-90 transition-all duration-300 group-hover:bg-primary/30 group-hover:blur-[120px]" />
-              <img src={centerCharacter} alt="Wingmen character" className="relative z-10 h-[420px] xl:h-[520px] w-auto object-contain" />
+              <img alt="Wingmen character" className="relative z-10 h-[420px] xl:h-[520px] w-auto object-contain" src="/lovable-uploads/8792a70d-7f59-4d57-9765-4769a6cefd5f.png" />
             </motion.div>
           </div>
 
