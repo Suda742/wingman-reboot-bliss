@@ -12,6 +12,17 @@ const navLinks = [
   { href: "#", label: "FOLLOW US" },
 ];
 
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string, callback?: () => void) => {
+  if (href.startsWith("#") && href.length > 1) {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    callback?.();
+  }
+};
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,6 +36,7 @@ export const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => handleSmoothScroll(e, link.href)}
                 className="nav-link"
               >
                 {link.label}
@@ -51,6 +63,7 @@ export const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
+                onClick={(e) => handleSmoothScroll(e, link.href)}
                 className="nav-link"
               >
                 {link.label}
@@ -83,7 +96,7 @@ export const Navbar = () => {
                     key={link.label}
                     href={link.href}
                     className="nav-link text-center py-2"
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleSmoothScroll(e, link.href, () => setIsOpen(false))}
                   >
                     {link.label}
                   </a>
