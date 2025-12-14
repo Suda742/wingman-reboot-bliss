@@ -78,11 +78,10 @@ export const NFTSection = () => {
             className="space-y-6 order-1 lg:order-2"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Join the exclusive WINGMEN NFT collection featuring 3,000 unique digital collectibles. 
-              Each NFT grants you access to exclusive content, behind-the-scenes footage, and community events.
+              The WINGMEN NFT collection features 3,000 unique digital collectibles. Each NFT grants access to exclusive content, behind-the-scenes footage, and community events. Holders gain influence on story direction and creative decisions.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Own a piece of crypto cinema history and become part of the WINGMEN revolution.
+              NFTs serve as membership tokens to the WINGMEN holder club. Participate in the first crypto-funded film project and own a piece of cinema history. Tokens can be traded on secondary markets, providing long-term value and flexibility.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <motion.button

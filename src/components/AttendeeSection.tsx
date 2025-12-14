@@ -7,22 +7,22 @@ const benefits = [
   {
     icon: Ticket,
     title: "Product Placement",
-    description: "Brand integration opportunities in the film.",
+    description: "Brand integration and product placement opportunities directly inside the film. Joint PR and collaboration projects with the production team.",
   },
   {
     icon: Users,
     title: "Community Access",
-    description: "NFT holder community and creative input.",
+    description: "Exclusive NFT holder club access. Influence on story direction and scenario decisions. Use of Web3 solutions in real film production.",
   },
   {
     icon: Star,
     title: "Premium Events",
-    description: "Private events and festival participation.",
+    description: "Private premium celebration events. Participation in international festivals and award campaigns. Industry-first case study involvement.",
   },
   {
     icon: Trophy,
     title: "Long-term Role",
-    description: "Ongoing participation in WINGMEN project.",
+    description: "Long-term participation and support of the WINGMEN project. Ability to trade tokens on secondary markets. Ongoing involvement in future seasons.",
   },
 ];
 
@@ -49,9 +49,9 @@ export const AttendeeSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center text-muted-foreground text-lg max-w-2xl mx-auto mb-16"
+          className="text-center text-muted-foreground text-lg max-w-3xl mx-auto mb-16"
         >
-          Join as an investor or holder. Unlock collaboration, events, and long-term participation.
+          Join as an investor or NFT holder. Unlock collaboration opportunities, exclusive events, creative influence, and long-term participation in the WINGMEN project.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
