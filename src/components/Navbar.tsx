@@ -15,8 +15,9 @@ const navLinks = [{
   href: "#gallery",
   label: "GALLERY"
 }, {
-  href: "#",
-  label: "WINGPAPER"
+  href: "/WINGPAPER.pdf",
+  label: "WINGPAPER",
+  external: true
 }, {
   href: "https://x.com/Wingmenfilm",
   label: "FOLLOW US",
