@@ -38,7 +38,7 @@ export const NFTSection = () => {
           delay: 0.2
         }} className="order-2 lg:order-1 flex items-center justify-center">
             <div className="rounded-2xl overflow-hidden border-2 border-primary shadow-[0_0_30px_rgba(255,107,0,0.4)] max-w-[600px] w-full">
-              <img alt="WINGMEN PASS - Founders Edition" className="w-full h-auto object-contain" src="/lovable-uploads/e46b957c-58c5-4962-b0e8-3568ce60e375.jpg" />
+              <img alt="WINGMEN PASS - Founders Edition" className="w-full h-auto object-contain" src="/lovable-uploads/f2bad79f-a409-4bc3-a72c-fc8d46430d9a.png" />
             </div>
           </motion.div>
 
