@@ -40,14 +40,14 @@ export const GallerySection = () => {
           GALLERY
         </motion.h2>
 
-        <div className="grid grid-cols-2 gap-4 max-w-[760px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1520px] mx-auto justify-items-center">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 * index }}
-              className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] md:w-[320px] md:h-[320px] xl:w-[360px] xl:h-[360px] overflow-hidden rounded-2xl border-2 border-primary shadow-[0_0_20px_rgba(255,107,0,0.3)]"
+              transition={{ duration: 0.5, delay: 0.05 * index }}
+              className="w-[280px] h-[280px] sm:w-[260px] sm:h-[260px] md:w-[280px] md:h-[280px] lg:w-[320px] lg:h-[320px] xl:w-[360px] xl:h-[360px] overflow-hidden rounded-2xl border-2 border-primary shadow-[0_0_20px_rgba(255,107,0,0.3)]"
             >
               <img
                 src={image.src}
