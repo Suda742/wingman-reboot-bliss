@@ -18,8 +18,9 @@ const navLinks = [{
   href: "#",
   label: "WINGPAPER"
 }, {
-  href: "#",
-  label: "FOLLOW US"
+  href: "https://x.com/Wingmenfilm",
+  label: "FOLLOW US",
+  external: true
 }];
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string, callback?: () => void) => {
   if (href.startsWith("#") && href.length > 1) {
@@ -40,7 +41,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Left nav links */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.slice(0, 3).map(link => <a key={link.label} href={link.href} onClick={e => handleSmoothScroll(e, link.href)} className="nav-link">
+            {navLinks.slice(0, 3).map(link => <a key={link.label} href={link.href} onClick={e => !('external' in link) && handleSmoothScroll(e, link.href)} {...('external' in link ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="nav-link">
                 {link.label}
               </a>)}
           </div>
@@ -58,7 +59,7 @@ export const Navbar = () => {
 
           {/* Right nav links */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.slice(3).map(link => <a key={link.label} href={link.href} onClick={e => handleSmoothScroll(e, link.href)} className="nav-link">
+            {navLinks.slice(3).map(link => <a key={link.label} href={link.href} onClick={e => !('external' in link) && handleSmoothScroll(e, link.href)} {...('external' in link ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="nav-link">
                 {link.label}
               </a>)}
           </div>
@@ -82,7 +83,7 @@ export const Navbar = () => {
           height: 0
         }} className="lg:hidden mt-4 pb-4">
               <div className="flex flex-col gap-4">
-                {navLinks.map(link => <a key={link.label} href={link.href} className="nav-link text-center py-2" onClick={e => handleSmoothScroll(e, link.href, () => setIsOpen(false))}>
+                {navLinks.map(link => <a key={link.label} href={link.href} className="nav-link text-center py-2" onClick={e => !('external' in link) && handleSmoothScroll(e, link.href, () => setIsOpen(false))} {...('external' in link ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
                     {link.label}
                   </a>)}
               </div>
