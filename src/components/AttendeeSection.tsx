@@ -83,13 +83,16 @@ export const AttendeeSection = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <motion.button
+          <motion.a
+            href="https://x.com/Wingmenfilm"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="gradient-orange-box text-primary-foreground font-display text-lg tracking-wider px-10 py-5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
+            className="inline-block gradient-orange-box text-primary-foreground font-display text-lg tracking-wider px-10 py-5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/30"
           >
             BECOME A WINGMEN ATTENDEE
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>
