@@ -1,17 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import nft1 from "@/assets/nft-1.png";
-import nft2 from "@/assets/nft-2.png";
-import nft3 from "@/assets/nft-3.png";
-import nft4 from "@/assets/nft-4.mp4";
-
-const nftImages = [
-  { src: nft1, alt: "NFT Character 1", type: "image" },
-  { src: nft2, alt: "NFT Character 2", type: "image" },
-  { src: nft3, alt: "NFT Character 3", type: "image" },
-  { src: nft4, alt: "NFT Character 4", type: "video" },
-];
+import nftFoundersPass from "@/assets/nft-founders-pass.png";
 
 export const NFTSection = () => {
   const ref = useRef(null);
@@ -33,40 +23,19 @@ export const NFTSection = () => {
         </motion.h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* NFT Collection Grid */}
+          {/* NFT Founders Pass Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="order-2 lg:order-1"
+            className="order-2 lg:order-1 flex items-center justify-center"
           >
-            <div className="grid grid-cols-2 gap-4 max-w-[680px] mx-auto">
-              {nftImages.map((nft, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                  className="w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[280px] md:h-[280px] xl:w-[320px] xl:h-[320px] rounded-2xl overflow-hidden border-2 border-primary shadow-[0_0_20px_rgba(255,107,0,0.3)]"
-                >
-                  {nft.type === "video" ? (
-                    <video
-                      src={nft.src}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover object-center"
-                    />
-                  ) : (
-                    <img
-                      src={nft.src}
-                      alt={nft.alt}
-                      className="w-full h-full object-cover object-center"
-                    />
-                  )}
-                </motion.div>
-              ))}
+            <div className="rounded-2xl overflow-hidden border-2 border-primary shadow-[0_0_30px_rgba(255,107,0,0.4)] max-w-[600px] w-full">
+              <img
+                src={nftFoundersPass}
+                alt="WINGMEN PASS - Founders Edition"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </motion.div>
 
