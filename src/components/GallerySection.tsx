@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import gallery1 from "@/assets/gallery-1.gif";
+import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.gif";
 import gallery3 from "@/assets/gallery-3.gif";
 import gallery4 from "@/assets/gallery-4.gif";
