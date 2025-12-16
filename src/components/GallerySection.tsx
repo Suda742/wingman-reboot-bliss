@@ -19,7 +19,7 @@ import gallery15 from "@/assets/gallery-15.png";
 import gallery16 from "@/assets/gallery-16.png";
 import gallery17 from "@/assets/gallery-17.png";
 import gallery18 from "@/assets/gallery-18.png";
-import gallery19 from "@/assets/gallery-19.gif";
+import gallery19 from "@/assets/gallery-19.png";
 import gallery20 from "@/assets/gallery-20.png";
 
 type GalleryImage = {
