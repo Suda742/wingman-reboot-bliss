@@ -20,8 +20,15 @@ import gallery16 from "@/assets/gallery-16.gif";
 import gallery17 from "@/assets/gallery-17.png";
 import gallery18 from "@/assets/gallery-18.gif";
 import gallery19 from "@/assets/gallery-19.gif";
+import gallery20 from "@/assets/gallery-20.png";
 
-const mainGalleryImages = [
+type GalleryImage = {
+  src: string | null;
+  alt: string;
+  isPlaceholder?: boolean;
+};
+
+const galleryImages: GalleryImage[] = [
   { src: gallery1, alt: "Wingmen Character 1" },
   { src: gallery2, alt: "Wingmen Character 2" },
   { src: gallery3, alt: "Wingmen Character 3" },
@@ -38,15 +45,13 @@ const mainGalleryImages = [
   { src: gallery14, alt: "Wingmen Character 14" },
   { src: gallery15, alt: "Wingmen Character 15" },
   { src: gallery16, alt: "Wingmen Character 16" },
-];
-
-const lastRowImages = [
   { src: gallery17, alt: "Wingmen Character 17" },
   { src: gallery18, alt: "Wingmen Character 18" },
   { src: gallery19, alt: "Wingmen Character 19" },
+  { src: gallery20, alt: "Wingmen Character 20" },
 ];
 
-const GalleryItem = ({ image, index, isInView }: { image: { src: string; alt: string }; index: number; isInView: boolean }) => (
+const GalleryItem = ({ image, index, isInView }: { image: GalleryImage; index: number; isInView: boolean }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.8 }}
     animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -54,11 +59,17 @@ const GalleryItem = ({ image, index, isInView }: { image: { src: string; alt: st
     className="p-2 sm:p-3 lg:p-4"
   >
     <div className="w-[260px] h-[260px] sm:w-[240px] sm:h-[240px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[320px] xl:h-[320px] overflow-hidden rounded-2xl border-2 border-primary shadow-[0_0_20px_rgba(255,107,0,0.3)]">
-      <img
-        src={image.src}
-        alt={image.alt}
-        className="w-full h-full object-cover object-center"
-      />
+      {image.isPlaceholder ? (
+        <div className="w-full h-full flex items-center justify-center bg-background/50">
+          <span className="text-primary font-display text-xl">Coming soon</span>
+        </div>
+      ) : (
+        <img
+          src={image.src!}
+          alt={image.alt}
+          className="w-full h-full object-cover object-center"
+        />
+      )}
     </div>
   </motion.div>
 );
@@ -82,20 +93,11 @@ export const GallerySection = () => {
           GALLERY
         </motion.h2>
 
-        {/* Main grid - 4 columns */}
+        {/* Single grid - 4 columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 max-w-[1600px] mx-auto justify-items-center">
-          {mainGalleryImages.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <GalleryItem key={index} image={image} index={index} isInView={isInView} />
           ))}
-        </div>
-
-        {/* Last row - 3 items centered */}
-        <div className="flex justify-center mt-6 sm:mt-8 lg:mt-10 xl:mt-12">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 justify-items-center">
-            {lastRowImages.map((image, index) => (
-              <GalleryItem key={index + 16} image={image} index={index + 16} isInView={isInView} />
-            ))}
-          </div>
         </div>
       </div>
     </section>
