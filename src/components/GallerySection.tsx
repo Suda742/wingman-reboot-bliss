@@ -89,11 +89,13 @@ export const GallerySection = () => {
           ))}
         </div>
 
-        {/* Last row - 3 items centered with same gap as main grid */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
-          {lastRowImages.map((image, index) => (
-            <GalleryItem key={index + 16} image={image} index={index + 16} isInView={isInView} />
-          ))}
+        {/* Last row - 3 items centered */}
+        <div className="flex justify-center mt-6 sm:mt-8 lg:mt-10 xl:mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 justify-items-center">
+            {lastRowImages.map((image, index) => (
+              <GalleryItem key={index + 16} image={image} index={index + 16} isInView={isInView} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
