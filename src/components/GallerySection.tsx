@@ -13,6 +13,10 @@ import gallery9 from "@/assets/gallery-9.gif";
 import gallery10 from "@/assets/gallery-10.gif";
 import gallery11 from "@/assets/gallery-11.gif";
 import gallery12 from "@/assets/gallery-12.gif";
+import gallery13 from "@/assets/gallery-13.gif";
+import gallery14 from "@/assets/gallery-14.gif";
+import gallery15 from "@/assets/gallery-15.png";
+import gallery16 from "@/assets/gallery-16.gif";
 
 const galleryImages = [
   { src: gallery1, alt: "Wingmen Character 1" },
@@ -27,6 +31,10 @@ const galleryImages = [
   { src: gallery10, alt: "Wingmen Character 10" },
   { src: gallery11, alt: "Wingmen Character 11" },
   { src: gallery12, alt: "Wingmen Character 12" },
+  { src: gallery13, alt: "Wingmen Character 13" },
+  { src: gallery14, alt: "Wingmen Character 14" },
+  { src: gallery15, alt: "Wingmen Character 15" },
+  { src: gallery16, alt: "Wingmen Character 16" },
 ];
 
 export const GallerySection = () => {
