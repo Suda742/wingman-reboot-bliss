@@ -83,18 +83,18 @@ export const AttendeeSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 relative w-full h-[320px] md:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden bg-background/50 border border-primary/30 flex items-center justify-center"
+          className="mt-12 relative w-full h-[380px] md:h-[420px] lg:h-[450px] rounded-2xl overflow-hidden border border-primary/20"
           style={{
-            boxShadow: "0 0 30px hsl(var(--primary) / 0.2)"
+            boxShadow: "0 0 20px hsl(var(--primary) / 0.15)"
           }}
         >
           <img
             src={attendeeBanner}
-            alt=""
-            className="w-full h-full object-contain"
+            alt="WINGMEN Investors and Holders benefits"
+            className="w-full h-full object-cover object-center"
           />
-          {/* Very light overlay for consistency */}
-          <div className="absolute inset-0 bg-background/10 pointer-events-none" />
+          {/* Subtle dark overlay */}
+          <div className="absolute inset-0 bg-background/15 pointer-events-none" />
         </motion.div>
 
         <motion.div
