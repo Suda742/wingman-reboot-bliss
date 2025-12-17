@@ -83,26 +83,18 @@ export const AttendeeSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 relative w-full h-[320px] md:h-[360px] lg:h-[380px] rounded-2xl overflow-hidden"
+          className="mt-12 relative w-full h-[320px] md:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden bg-background/50 border border-primary/30 flex items-center justify-center"
           style={{
-            boxShadow: "0 0 40px hsl(var(--primary) / 0.15), inset 0 0 60px hsl(var(--primary) / 0.05)"
+            boxShadow: "0 0 30px hsl(var(--primary) / 0.2)"
           }}
         >
-          {/* Background Image */}
           <img
             src={attendeeBanner}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="w-full h-full object-contain"
           />
-          {/* Dark cinematic overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-background/20" />
-          {/* Soft orange glow edges */}
-          <div 
-            className="absolute inset-0 rounded-2xl pointer-events-none"
-            style={{
-              boxShadow: "inset 0 0 30px hsl(var(--primary) / 0.1)"
-            }}
-          />
+          {/* Very light overlay for consistency */}
+          <div className="absolute inset-0 bg-background/10 pointer-events-none" />
         </motion.div>
 
         <motion.div
