@@ -1,29 +1,51 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Users, Ticket, Star, Trophy } from "lucide-react";
-import attendeeBanner from "@/assets/attendee-banner.png";
+import { Sparkles, Users, Calendar, Trophy, Vote, Repeat, Wrench, Megaphone } from "lucide-react";
 
-const benefits = [
+const investorBenefits = [
   {
-    icon: Ticket,
+    icon: Megaphone,
     title: "Product Placement",
-    description: "Brand integration and product placement opportunities directly inside the film. Joint PR and collaboration projects with the production team.",
+    description: "Brand integration and product placement opportunities directly inside the film.",
   },
   {
-    icon: Users,
-    title: "Community Access",
-    description: "Exclusive NFT holder club access. Influence on story direction and scenario decisions. Use of Web3 solutions in real film production.",
+    icon: Sparkles,
+    title: "PR Collaboration",
+    description: "Joint PR and collaboration projects with the production team.",
   },
   {
-    icon: Star,
+    icon: Calendar,
     title: "Premium Events",
-    description: "Private premium celebration events. Participation in international festivals and award campaigns. Industry-first case study involvement.",
+    description: "Private premium celebration events and exclusive gatherings.",
   },
   {
     icon: Trophy,
-    title: "Long-term Role",
-    description: "Long-term participation and support of the WINGMEN project. Ability to trade tokens on secondary markets. Ongoing involvement in future seasons.",
+    title: "Festival Access",
+    description: "Participation in international festivals and award campaigns.",
+  },
+];
+
+const holderBenefits = [
+  {
+    icon: Users,
+    title: "Community Access",
+    description: "Exclusive NFT holder club access and community participation.",
+  },
+  {
+    icon: Vote,
+    title: "Creative Influence",
+    description: "Influence on story direction and scenario decisions.",
+  },
+  {
+    icon: Repeat,
+    title: "Token Trading",
+    description: "Ability to trade tokens on secondary markets after one year.",
+  },
+  {
+    icon: Wrench,
+    title: "Web3 Production",
+    description: "Use of Web3 solutions in real film production processes.",
   },
 ];
 
@@ -35,6 +57,7 @@ export const AttendeeSection = () => {
     <section id="attendee" className="py-24 relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
       <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px]" />
+      <div className="absolute left-0 bottom-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px]" />
 
       <div className="container mx-auto px-4">
         <motion.h2
@@ -55,51 +78,107 @@ export const AttendeeSection = () => {
           Join as an investor or NFT holder. Unlock collaboration opportunities, exclusive events, creative influence, and long-term participation in the WINGMEN project.
         </motion.p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={benefit.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 * index }}
-              whileHover={{ y: -10 }}
-              className="bg-card/70 backdrop-blur-sm p-6 rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div className="w-14 h-14 gradient-orange-box rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <benefit.icon className="w-8 h-8 text-primary-foreground" />
+        {/* Two-column comparison */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* INVESTORS Column */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="relative"
+          >
+            <div className="bg-card/40 backdrop-blur-md rounded-2xl border border-border/30 p-8 lg:p-10 h-full">
+              {/* Header */}
+              <div className="mb-8">
+                <div className="w-full h-px bg-gradient-to-r from-primary/60 via-primary/30 to-transparent mb-6" />
+                <h3 className="font-display text-3xl lg:text-4xl font-bold text-primary tracking-wide">
+                  INVESTORS
+                </h3>
+                <p className="text-muted-foreground mt-2">
+                  Strategic partners & brand collaborators
+                </p>
               </div>
-              <h3 className="font-display text-xl font-bold text-foreground mb-2">
-                {benefit.title}
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                {benefit.description}
-              </p>
-            </motion.div>
-          ))}
+
+              {/* Benefits list */}
+              <ul className="space-y-6">
+                {investorBenefits.map((benefit, index) => (
+                  <motion.li
+                    key={benefit.title}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
+                    className="flex gap-4"
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                      <benefit.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-display font-semibold text-foreground mb-1">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+
+          {/* HOLDERS Column */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="relative"
+          >
+            <div className="bg-card/40 backdrop-blur-md rounded-2xl border border-border/30 p-8 lg:p-10 h-full">
+              {/* Header */}
+              <div className="mb-8">
+                <div className="w-full h-px bg-gradient-to-r from-primary/60 via-primary/30 to-transparent mb-6" />
+                <h3 className="font-display text-3xl lg:text-4xl font-bold text-primary tracking-wide">
+                  HOLDERS
+                </h3>
+                <p className="text-muted-foreground mt-2">
+                  NFT owners & community members
+                </p>
+              </div>
+
+              {/* Benefits list */}
+              <ul className="space-y-6">
+                {holderBenefits.map((benefit, index) => (
+                  <motion.li
+                    key={benefit.title}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
+                    className="flex gap-4"
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                      <benefit.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-display font-semibold text-foreground mb-1">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
         </div>
 
-        {/* Visual Banner Block */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 relative w-full h-[420px] md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden border border-primary/20 bg-background flex items-center justify-center p-4"
-          style={{
-            boxShadow: "0 0 20px hsl(var(--primary) / 0.15)"
-          }}
-        >
-          <img
-            src={attendeeBanner}
-            alt="WINGMEN Investors and Holders benefits"
-            className="max-w-full max-h-full object-contain"
-          />
-        </motion.div>
-
+        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-12"
+          className="text-center mt-16"
         >
           <motion.a
             href="https://x.com/Wingmenfilm"
