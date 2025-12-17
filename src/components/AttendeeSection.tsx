@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Users, Ticket, Star, Trophy } from "lucide-react";
+import attendeeBanner from "@/assets/attendee-banner.png";
 
 const benefits = [
   {
@@ -76,6 +77,33 @@ export const AttendeeSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Visual Banner Block */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-12 relative w-full h-[320px] md:h-[360px] lg:h-[380px] rounded-2xl overflow-hidden"
+          style={{
+            boxShadow: "0 0 40px hsl(var(--primary) / 0.15), inset 0 0 60px hsl(var(--primary) / 0.05)"
+          }}
+        >
+          {/* Background Image */}
+          <img
+            src={attendeeBanner}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+          {/* Dark cinematic overlay with gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-background/20" />
+          {/* Soft orange glow edges */}
+          <div 
+            className="absolute inset-0 rounded-2xl pointer-events-none"
+            style={{
+              boxShadow: "inset 0 0 30px hsl(var(--primary) / 0.1)"
+            }}
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
