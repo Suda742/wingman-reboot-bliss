@@ -81,6 +81,10 @@
     scroll-behavior: smooth;
   }
 
+  section {
+    scroll-margin-top: 90px;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
