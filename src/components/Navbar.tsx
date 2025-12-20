@@ -26,13 +26,18 @@ const navLinks = [{
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string, callback?: () => void) => {
   if (href.startsWith("#") && href.length > 1) {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth"
-      });
-    }
+    // Close menu first if callback provided
     callback?.();
+    // Wait for menu to close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    }, callback ? 100 : 0);
   }
 };
 export const Navbar = () => {
