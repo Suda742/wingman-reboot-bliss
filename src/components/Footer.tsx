@@ -31,7 +31,7 @@ const socialLinks = [{
   label: "X"
 }, {
   icon: DiscordIcon,
-  href: "https://discord.gg/5fJ6zVDf5p",
+  href: "https://discord.gg/cTeYWsJqP7",
   label: "Discord"
 }, {
   icon: InstagramIcon,
