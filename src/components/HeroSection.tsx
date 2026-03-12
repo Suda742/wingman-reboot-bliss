@@ -8,7 +8,7 @@ export const HeroSection = () => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})`, backgroundPosition: 'center 40%' }}
+        style={{ backgroundImage: `url(${heroBg})`, backgroundPosition: 'center 52%' }}
       />
 
       {/* Directional overlay — left darker, center lighter to preserve faces */}
