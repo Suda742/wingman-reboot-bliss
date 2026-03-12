@@ -10,7 +10,6 @@ export const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-no-repeat hero-bg-position"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      />
 
       {/* Directional overlay — left darker, center lighter to preserve faces */}
       <div
