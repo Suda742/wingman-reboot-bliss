@@ -7,8 +7,8 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})`, backgroundPosition: 'center 40%' }}
+        className="absolute inset-0 bg-cover bg-no-repeat hero-bg-position"
+        style={{ backgroundImage: `url(${heroBg})` }}
       />
 
       {/* Directional overlay — left darker, center lighter to preserve faces */}

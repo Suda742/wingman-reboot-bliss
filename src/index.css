@@ -179,3 +179,13 @@
     }
   }
 }
+
+.hero-bg-position {
+  background-position: center 52%;
+}
+
+@media (max-width: 1023px) {
+  .hero-bg-position {
+    background-position: center 58%;
+  }
+}
