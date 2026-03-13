@@ -181,11 +181,11 @@
 }
 
 .hero-bg-position {
-  background-position: center 52%;
+  background-position: center 65%;
 }
 
 @media (max-width: 1023px) {
   .hero-bg-position {
-    background-position: center 58%;
+    background-position: center 75%;
   }
 }
