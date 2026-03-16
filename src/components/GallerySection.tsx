@@ -6,7 +6,7 @@ import gallery2 from "@/assets/gallery-2.gif";
 // Removed unused imports gallery3, gallery4
 import gallery5 from "@/assets/gallery-5.gif";
 import gallery6 from "@/assets/gallery-6.gif";
-import gallery7 from "@/assets/gallery-7.gif";
+// Removed unused import gallery7
 import gallery8 from "@/assets/gallery-8.gif";
 import gallery9 from "@/assets/gallery-9.png";
 import gallery10 from "@/assets/gallery-10.png";
