@@ -27,7 +27,7 @@ type GalleryImage = {
   isPlaceholder?: boolean;
 };
 const galleryImages: GalleryImage[] = [{
-  src: gallery1,
+  src: "/lovable-uploads/a560db8f-ba9f-444a-affd-a0e3f1fe9344.png",
   alt: "Wingmen Character 1"
 }, {
   src: gallery2,
