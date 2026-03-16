@@ -6,7 +6,7 @@ const roadmapItems = [
   {
     phase: "Stage 1",
     title: "Fundraising",
-    description: "Initial crypto fundraising to launch film production. All investments accepted exclusively in cryptocurrency.",
+    description: "Initial crypto fundraising to launch TV series production. All investments accepted exclusively in cryptocurrency.",
     completed: true,
   },
   {
@@ -18,7 +18,7 @@ const roadmapItems = [
   {
     phase: "Stage 3",
     title: "Production",
-    description: "Active film production and content creation. Completing all six episodes of the first season using collected crypto assets.",
+    description: "Active TV series production and content creation. Completing all six episodes of the first season using collected crypto assets.",
     completed: false,
     current: true,
   },
@@ -31,7 +31,7 @@ const roadmapItems = [
   {
     phase: "Stage 5",
     title: "Festivals",
-    description: "Presentation at international film festivals worldwide. Submitting to major awards and industry recognition programs.",
+    description: "Presentation at international TV series festivals worldwide. Submitting to major awards and industry recognition programs.",
     completed: false,
   },
   {
@@ -43,7 +43,7 @@ const roadmapItems = [
   {
     phase: "Stage 7",
     title: "Expansion",
-    description: "Distribution of the Web3 solution model within the film industry. Demonstrating a working crypto-funded production and distribution framework.",
+    description: "Distribution of the Web3 solution model within the TV series industry. Demonstrating a working crypto-funded production and distribution framework.",
     completed: false,
   },
 ];

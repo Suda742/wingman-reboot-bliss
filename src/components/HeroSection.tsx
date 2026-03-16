@@ -37,7 +37,7 @@ export const HeroSection = () => {
           <div className="text-center relative z-10 pt-4">
             <img src={wingmenLogo} alt="WINGMEN" className="h-[60px] md:h-[90px] w-auto mx-auto mb-3" />
             <p className="text-base md:text-lg text-muted-foreground max-w-xs mx-auto">
-              THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
+              THE FIRST TV SERIES ABOUT CRYPTO ENTHUSIASTS
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export const HeroSection = () => {
             >
               <img src={wingmenLogo} alt="WINGMEN" className="h-[140px] lg:h-[170px] xl:h-[200px] 2xl:h-[240px] w-auto mb-6" />
               <p className="text-xl text-muted-foreground max-w-sm">
-                THE FIRST FILM ABOUT CRYPTO ENTHUSIASTS
+                THE FIRST TV SERIES ABOUT CRYPTO ENTHUSIASTS
               </p>
             </motion.div>
           </div>

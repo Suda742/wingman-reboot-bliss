@@ -48,7 +48,7 @@ export const Footer = () => {
               WINGMEN
             </h2>
             <p className="text-muted-foreground text-sm mt-2">
-              The First Film About Crypto Enthusiasts
+              The First TV Series About Crypto Enthusiasts
             </p>
           </div>
 
