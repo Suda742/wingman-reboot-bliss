@@ -6,7 +6,7 @@ const roadmapItems = [
   {
     phase: "Stage 1",
     title: "Fundraising",
-    description: "Initial crypto fundraising to launch film production. All investments accepted exclusively in cryptocurrency.",
+    description: "Initial crypto fundraising to launch TV series production. All investments accepted exclusively in cryptocurrency.",
     completed: true,
   },
   {
