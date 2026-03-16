@@ -47,7 +47,7 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              WINGMEN is a multi-part crime drama film whose main plot develops inside the crypto world. This is a long-term project, not a single movie. The story follows characters whose lives, risks, and choices unfold within the Web3 ecosystem. The project combines film production, Web3 funding, NFTs, and digital distribution into one unified system.
+              WINGMEN is a multi-part crime drama TV series whose main plot develops inside the crypto world. This is a long-term project, not a single movie. The story follows characters whose lives, risks, and choices unfold within the Web3 ecosystem. The project combines TV series production, Web3 funding, NFTs, and digital distribution into one unified system.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               For the first time in the global film industry, a multi-episode feature film is being created where funding, spending, and accounting are done only in crypto. The uniqueness lies in both the crime drama script and the principled crypto-only financial model.
