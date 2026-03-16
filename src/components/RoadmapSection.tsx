@@ -31,7 +31,7 @@ const roadmapItems = [
   {
     phase: "Stage 5",
     title: "Festivals",
-    description: "Presentation at international film festivals worldwide. Submitting to major awards and industry recognition programs.",
+    description: "Presentation at international TV series festivals worldwide. Submitting to major awards and industry recognition programs.",
     completed: false,
   },
   {
