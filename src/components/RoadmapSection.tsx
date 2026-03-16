@@ -18,7 +18,7 @@ const roadmapItems = [
   {
     phase: "Stage 3",
     title: "Production",
-    description: "Active film production and content creation. Completing all six episodes of the first season using collected crypto assets.",
+    description: "Active TV series production and content creation. Completing all six episodes of the first season using collected crypto assets.",
     completed: false,
     current: true,
   },
