@@ -6,7 +6,7 @@ import gallery2 from "@/assets/gallery-2.gif";
 // Removed unused imports gallery3, gallery4
 import gallery5 from "@/assets/gallery-5.gif";
 import gallery6 from "@/assets/gallery-6.gif";
-import gallery7 from "@/assets/gallery-7.gif";
+// Removed unused import gallery7
 import gallery8 from "@/assets/gallery-8.gif";
 import gallery9 from "@/assets/gallery-9.png";
 import gallery10 from "@/assets/gallery-10.png";
@@ -44,7 +44,7 @@ const galleryImages: GalleryImage[] = [{
   src: gallery6,
   alt: "Wingmen Character 6"
 }, {
-  src: gallery7,
+  src: "/lovable-uploads/af7939f6-c87e-4d63-be0f-1dfb920657ae.png",
   alt: "Wingmen Character 7"
 }, {
   src: gallery8,
