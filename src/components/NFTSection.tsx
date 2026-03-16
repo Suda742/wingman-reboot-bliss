@@ -22,7 +22,7 @@ export const NFTSection = () => {
       } : {}} transition={{
         duration: 0.6
       }} className="section-title text-center mb-16">
-          NFT pass 
+          First stage - NFT PASS
         </motion.h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
