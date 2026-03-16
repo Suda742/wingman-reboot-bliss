@@ -44,7 +44,7 @@ const galleryImages: GalleryImage[] = [{
   src: gallery6,
   alt: "Wingmen Character 6"
 }, {
-  src: gallery7,
+  src: "/lovable-uploads/af7939f6-c87e-4d63-be0f-1dfb920657ae.png",
   alt: "Wingmen Character 7"
 }, {
   src: gallery8,
