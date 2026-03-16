@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-// Removed unused import gallery1
-import gallery2 from "@/assets/gallery-2.gif";
-// Removed unused imports gallery3, gallery4
-import gallery5 from "@/assets/gallery-5.gif";
+// Removed unused imports gallery1, gallery2
+// Removed unused imports gallery3, gallery4, gallery5
 import gallery6 from "@/assets/gallery-6.gif";
-// Removed unused import gallery7
-import gallery8 from "@/assets/gallery-8.gif";
+// Removed unused imports gallery7, gallery8
 import gallery9 from "@/assets/gallery-9.png";
 import gallery10 from "@/assets/gallery-10-new.png";
 import gallery11 from "@/assets/gallery-11.png";
@@ -19,7 +16,7 @@ import gallery15 from "@/assets/gallery-15.png";
 import gallery17 from "@/assets/gallery-17.png";
 import gallery18 from "@/assets/gallery-18.png";
 import gallery19 from "@/assets/gallery-19.png";
-import gallery20 from "@/assets/gallery-20.png";
+// Removed unused import gallery20
 type GalleryImage = {
   src: string | null;
   alt: string;
@@ -29,7 +26,7 @@ const galleryImages: GalleryImage[] = [{
   src: "/lovable-uploads/a560db8f-ba9f-444a-affd-a0e3f1fe9344.png",
   alt: "Wingmen Character 1"
 }, {
-  src: gallery2,
+  src: "/lovable-uploads/4e9f93b8-383c-472c-b7d5-fb707319f557.png",
   alt: "Wingmen Character 2"
 }, {
   src: "/lovable-uploads/0561a221-cf58-4ea8-8e40-5135d2b8c998.png",
@@ -38,7 +35,7 @@ const galleryImages: GalleryImage[] = [{
   src: "/lovable-uploads/aa8f8ba7-1645-4bad-967e-e1fb3571f661.png",
   alt: "Wingmen Character 4"
 }, {
-  src: gallery5,
+  src: "/lovable-uploads/3c5876dc-4857-4026-a7de-f20e794a9fb6.png",
   alt: "Wingmen Character 5"
 }, {
   src: gallery6,
@@ -47,7 +44,7 @@ const galleryImages: GalleryImage[] = [{
   src: "/lovable-uploads/af7939f6-c87e-4d63-be0f-1dfb920657ae.png",
   alt: "Wingmen Character 7"
 }, {
-  src: gallery8,
+  src: "/lovable-uploads/03a29c25-f73e-4b23-898b-636bb229e2d3.png",
   alt: "Wingmen Character 8"
 }, {
   src: gallery9,
@@ -83,7 +80,7 @@ const galleryImages: GalleryImage[] = [{
   src: gallery19,
   alt: "Wingmen Character 19"
 }, {
-  src: gallery20,
+  src: "/lovable-uploads/960e62a0-2e5d-453d-8cfc-5521e2185197.jpg",
   alt: "Wingmen Character 20"
 }];
 const GalleryItem = ({
