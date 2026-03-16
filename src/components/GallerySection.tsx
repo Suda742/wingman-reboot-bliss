@@ -3,8 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 // Removed unused import gallery1
 import gallery2 from "@/assets/gallery-2.gif";
-import gallery3 from "@/assets/gallery-3.gif";
-import gallery4 from "@/assets/gallery-4.gif";
+// Removed unused imports gallery3, gallery4
 import gallery5 from "@/assets/gallery-5.gif";
 import gallery6 from "@/assets/gallery-6.gif";
 import gallery7 from "@/assets/gallery-7.gif";
