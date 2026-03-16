@@ -53,7 +53,7 @@ export const AboutSection = () => {
               For the first time in the global TV series industry, a multi-episode feature TV series is being created where funding, spending, and accounting are done only in crypto. The uniqueness lies in both the crime drama script and the principled crypto-only financial model.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The first episode and official trailer are already completed. Season one will include six episodes. Crypto assets are currently being collected to complete the full season. The film will first be presented through international online cinemas and services, then submitted to major film festivals worldwide. Later stages include release on global streaming platforms.
+              The first episode and official trailer are already completed. Season one will include six episodes. Crypto assets are currently being collected to complete the full season. The TV series will first be presented through international online cinemas and services, then submitted to major TV series festivals worldwide. Later stages include release on global streaming platforms.
             </p>
             <div className="pt-4">
               <motion.button

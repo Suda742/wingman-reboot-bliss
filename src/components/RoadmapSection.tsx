@@ -43,7 +43,7 @@ const roadmapItems = [
   {
     phase: "Stage 7",
     title: "Expansion",
-    description: "Distribution of the Web3 solution model within the film industry. Demonstrating a working crypto-funded production and distribution framework.",
+    description: "Distribution of the Web3 solution model within the TV series industry. Demonstrating a working crypto-funded production and distribution framework.",
     completed: false,
   },
 ];

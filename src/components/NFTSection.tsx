@@ -57,7 +57,7 @@ export const NFTSection = () => {
 
 All token holders will receive physical copies of their unique cards, as well as physical merchandise with the TV series' characters' logos and autographs.</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              NFTs serve as membership tokens to the WINGMEN holder club. Participate in the first crypto-funded film project and own a piece of cinema history. Tokens can be traded on secondary markets, providing long-term value and flexibility.
+              NFTs serve as membership tokens to the WINGMEN holder club. Participate in the first crypto-funded TV series project and own a piece of cinema history. Tokens can be traded on secondary markets, providing long-term value and flexibility.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <motion.button whileHover={{
