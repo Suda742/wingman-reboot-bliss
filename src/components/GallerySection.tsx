@@ -9,7 +9,7 @@ import gallery6 from "@/assets/gallery-6.gif";
 // Removed unused import gallery7
 import gallery8 from "@/assets/gallery-8.gif";
 import gallery9 from "@/assets/gallery-9.png";
-import gallery10 from "@/assets/gallery-10.png";
+import gallery10 from "@/assets/gallery-10-new.png";
 import gallery11 from "@/assets/gallery-11.png";
 import gallery12 from "@/assets/gallery-12.png";
 import gallery13 from "@/assets/gallery-13.png";
