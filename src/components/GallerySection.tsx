@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-// Removed unused import gallery1
-import gallery2 from "@/assets/gallery-2.gif";
-// Removed unused imports gallery3, gallery4
-import gallery5 from "@/assets/gallery-5.gif";
+// Removed unused imports gallery1, gallery2
+// Removed unused imports gallery3, gallery4, gallery5
 import gallery6 from "@/assets/gallery-6.gif";
-// Removed unused import gallery7
-import gallery8 from "@/assets/gallery-8.gif";
+// Removed unused imports gallery7, gallery8
 import gallery9 from "@/assets/gallery-9.png";
 import gallery10 from "@/assets/gallery-10-new.png";
 import gallery11 from "@/assets/gallery-11.png";
@@ -19,7 +16,7 @@ import gallery15 from "@/assets/gallery-15.png";
 import gallery17 from "@/assets/gallery-17.png";
 import gallery18 from "@/assets/gallery-18.png";
 import gallery19 from "@/assets/gallery-19.png";
-import gallery20 from "@/assets/gallery-20.png";
+// Removed unused import gallery20
 type GalleryImage = {
   src: string | null;
   alt: string;
