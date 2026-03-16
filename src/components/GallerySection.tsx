@@ -15,7 +15,7 @@ import gallery12 from "@/assets/gallery-12.png";
 import gallery13 from "@/assets/gallery-13.png";
 import gallery14 from "@/assets/gallery-14.png";
 import gallery15 from "@/assets/gallery-15.png";
-import gallery16 from "@/assets/gallery-16.png";
+// Removed unused import gallery16
 import gallery17 from "@/assets/gallery-17.png";
 import gallery18 from "@/assets/gallery-18.png";
 import gallery19 from "@/assets/gallery-19.png";
