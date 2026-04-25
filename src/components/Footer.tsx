@@ -23,7 +23,7 @@ const socialLinks = [{
   label: "Farcaster"
 }, {
   icon: TelegramIcon,
-  href: "https://t.me/WINGMENFILM",
+  href: "https://t.me/WINGMEN_FILM",
   label: "Telegram"
 }, {
   icon: XIcon,
