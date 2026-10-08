@@ -20,6 +20,7 @@ const Index = () => {
       <RoadmapSection />
       <GallerySection />
       <AttendeeSection />
+      <MediaSection />
       <Footer />
     </main>
   );
