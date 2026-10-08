@@ -6,6 +6,7 @@ import { NFTSection } from "@/components/NFTSection";
 import { RoadmapSection } from "@/components/RoadmapSection";
 import { GallerySection } from "@/components/GallerySection";
 import { AttendeeSection } from "@/components/AttendeeSection";
+import { MediaSection } from "@/components/MediaSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <RoadmapSection />
       <GallerySection />
       <AttendeeSection />
+      <MediaSection />
       <Footer />
     </main>
   );

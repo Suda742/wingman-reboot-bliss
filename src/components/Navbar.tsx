@@ -15,6 +15,9 @@ const navLinks = [{
   href: "#gallery",
   label: "GALLERY"
 }, {
+  href: "#media",
+  label: "MEDIA"
+}, {
   href: "/WINGPAPER.pdf",
   label: "WINGPAPER",
   external: true
