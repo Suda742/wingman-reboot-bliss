@@ -49,7 +49,7 @@ export const HeroSection = () => {
           >
             <div className="gradient-orange-box rounded-3xl p-5 md:p-7 animate-pulse-glow">
               <motion.a
-                href="https://cardswingmen.space/"
+                href="https://www.wingmen.fun/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -87,7 +87,7 @@ export const HeroSection = () => {
             >
               <div className="gradient-orange-box rounded-3xl p-8 xl:p-12 animate-pulse-glow">
                 <motion.a
-                  href="https://cardswingmen.space/"
+                  href="https://www.wingmen.fun/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
